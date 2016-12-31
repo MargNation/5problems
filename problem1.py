@@ -19,7 +19,12 @@ def whileLoop(arr):
     return runningSum
 
 def recursive(arr):
-    return
+    runningSum = 0
+    if len(arr) == 1:
+        return arr[0]
+    else:
+        return arr[0] + recursive(arr[1:])
+    
 
 testArray = [1, 2, 3, 4, 5] #sum is 15
 print forLoop(testArray)
