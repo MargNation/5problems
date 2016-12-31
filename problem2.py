@@ -9,18 +9,24 @@ def alternate(arr1, arr2):
     
     newArray = []
     
-    while ((len(arr1) + len(arr2)) > 0):
+    while ((len(arr1) != 0) and (len(arr2) != 0)):
         newArray.append(arr1[0])
         arr1.pop(0)
         newArray.append(arr2[0])
         arr2.pop(0)
         
+    if (len(arr1) > 0):
+        newArray.extend(arr1)
+    else:
+        newArray.extend(arr2)
+        
     return newArray
-
 
 
 testArrayOne = ['a', 'b', 'c', 'd', 'e']
 testArrayTwo = [1, 2, 3, 4, 5]
+print alternate(testArrayOne, testArrayTwo) 
 
-print alternate(testArrayOne, testArrayTwo)
-print alternate(testArrayOne, testArrayTwo)
+testArrayThree = ['f', 'g', 'h']
+testArrayFour = [15, 14, 13, 12, 11, 10, 9, 8]
+print alternate(testArrayThree, testArrayFour)
