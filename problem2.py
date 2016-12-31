@@ -15,11 +15,13 @@ def alternate(arr1, arr2):
         newArray.append(arr2[0])
         arr2.pop(0)
         
-    if (len(arr1) > 0):
-        newArray.extend(arr1)
-    else:
+    if ((len(arr1) > 0) or (len(arr2) > 0)):
+        if (len(arr1) > 0):
+            newArray.extend(arr1)
+            return newArray
         newArray.extend(arr2)
-        
+        return newArray
+    
     return newArray
 
 
