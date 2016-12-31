@@ -8,11 +8,11 @@
 #As an example, here are the first 10 Fibonnaci numbers: 
 #0, 1, 1, 2, 3, 5, 8, 13, 21, and 34.
 
-def fibo(n):
+def fibo(limit):
     
     array = [0, 1]
     
-    while (len(array) < n):
+    while (len(array) < limit):
         array.append(array[len(array) - 2] + array[len(array) - 1])
         
     return array
