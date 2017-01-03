@@ -18,10 +18,10 @@ function findLargestNum(arr) {
 }
 
 var testArray1 = [50, 2, 1, 9];
-console.log('TestArray1: ', findLargestNum(testArray1));
+console.log('testArray1: ', findLargestNum(testArray1));
 var testArray2 = [9, 90];
-console.log('TestArray2: ', findLargestNum(testArray2));
+console.log('testArray2: ', findLargestNum(testArray2));
 var testArray3 = [8, 8, 8];
-console.log('TestArray2: ', findLargestNum(testArray3));
+console.log('testArray3: ', findLargestNum(testArray3));
 var testArray4 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-console.log('TestArray2: ', findLargestNum(testArray4));
+console.log('testArray4: ', findLargestNum(testArray4));
